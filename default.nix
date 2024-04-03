@@ -15,10 +15,12 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   # Alphabetical sorting
-  amdgpu-clocks  = pkgs.callPackage ./pkgs/amdgpu-clocks { };
-  memtest-vulkan = pkgs.callPackage ./pkgs/memtest-vulkan { };
-  ntfs2btrfs     = pkgs.callPackage ./pkgs/ntfs2btrfs { };
-  plank-themes   = pkgs.callPackage ./pkgs/plank-themes { };
-  rustdesk-bin   = pkgs.callPackage ./pkgs/rustdesk/appimage.nix { };
-  simulide       = pkgs.callPackage ./pkgs/simulide { };
+  amdgpud          = pkgs.callPackage ./pkgs/amdgpud { };
+  amdgpu-clocks    = pkgs.callPackage ./pkgs/amdgpu-clocks { };
+  memtest-vulkan   = pkgs.callPackage ./pkgs/memtest-vulkan { };
+  ntfs2btrfs       = pkgs.callPackage ./pkgs/ntfs2btrfs { };
+  plank-themes     = pkgs.callPackage ./pkgs/plank-themes { };
+  rustdesk-bin     = pkgs.callPackage ./pkgs/rustdesk/appimage.nix { };
+  simulide         = pkgs.callPackage ./pkgs/simulide { };
+  unison-gitignore = pkgs.callPackage ./pkgs/unison-gitignore { };
 }
