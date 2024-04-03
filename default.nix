@@ -17,6 +17,7 @@
   # Alphabetical sorting
   amdgpud          = pkgs.callPackage ./pkgs/amdgpud { };
   amdgpu-clocks    = pkgs.callPackage ./pkgs/amdgpu-clocks { };
+  lilipod          = pkgs.callPackage ./pkgs/lilipod { };
   memtest-vulkan   = pkgs.callPackage ./pkgs/memtest-vulkan { };
   ntfs2btrfs       = pkgs.callPackage ./pkgs/ntfs2btrfs { };
   plank-themes     = pkgs.callPackage ./pkgs/plank-themes { };
