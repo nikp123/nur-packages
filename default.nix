@@ -14,12 +14,11 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  # Will fix later dw
-  simulide = pkgs.callPackage ./pkgs/simulide { };
- 
-  plank-themes   = pkgs.callPackage ./pkgs/plank-themes { };
-  ntfs2btrfs     = pkgs.callPackage ./pkgs/ntfs2btrfs { };
+  # Alphabetical sorting
+  amdgpu-clocks  = pkgs.callPackage ./pkgs/amdgpu-clocks { };
   memtest-vulkan = pkgs.callPackage ./pkgs/memtest-vulkan { };
-  simulide-unwrapped = pkgs.libsForQt5.callPackage ./pkgs/simulide/unwrapped.nix { };
-  # ...
+  ntfs2btrfs     = pkgs.callPackage ./pkgs/ntfs2btrfs { };
+  plank-themes   = pkgs.callPackage ./pkgs/plank-themes { };
+  rustdesk-bin   = pkgs.callPackage ./pkgs/rustdesk/appimage.nix { };
+  simulide       = pkgs.callPackage ./pkgs/simulide { };
 }
