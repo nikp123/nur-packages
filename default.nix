@@ -20,6 +20,7 @@
   memtest-vulkan   = pkgs.callPackage ./pkgs/memtest-vulkan { };
   ntfs2btrfs       = pkgs.callPackage ./pkgs/ntfs2btrfs { };
   plank-themes     = pkgs.callPackage ./pkgs/plank-themes { };
+  qemu-3dfx        = pkgs.callPackage ./pkgs/qemu-3dfx { };
   rustdesk-bin     = pkgs.callPackage ./pkgs/rustdesk/appimage.nix { };
   simulide         = pkgs.callPackage ./pkgs/simulide { };
   unison-gitignore = pkgs.callPackage ./pkgs/unison-gitignore { };
