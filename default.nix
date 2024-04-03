@@ -17,8 +17,9 @@
   # Will fix later dw
   simulide = pkgs.callPackage ./pkgs/simulide { };
  
-  plank-themes = pkgs.callPackage ./pkgs/plank-themes { };
-  ntfs2btrfs   = pkgs.callPackage ./pkgs/ntfs2btrfs { };
+  plank-themes   = pkgs.callPackage ./pkgs/plank-themes { };
+  ntfs2btrfs     = pkgs.callPackage ./pkgs/ntfs2btrfs { };
+  memtest-vulkan = pkgs.callPackage ./pkgs/memtest-vulkan { };
   simulide-unwrapped = pkgs.libsForQt5.callPackage ./pkgs/simulide/unwrapped.nix { };
   # ...
 }
