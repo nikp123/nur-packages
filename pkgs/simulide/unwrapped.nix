@@ -1,6 +1,6 @@
-{ pkgs
+{ stdenv
+, pkgs
 , lib
-, stdenv
 , qtbase
 , qtscript
 , qtserialport
@@ -20,7 +20,7 @@ let
     url = "https://bazaar.launchpad.net/${author}/${name}/${version}/tarball/1425?start_revid=1425";
     sha256 = "sha256-8BkCLhlTcXVQSV9qd1iy6eBuoptj6MPZ6o5LBvBfxhA=";
   };
-in pkgs.stdenv.mkDerivation {
+in stdenv.mkDerivation {
   inherit version src;
 
   pname = "${name}-unwrapped";
