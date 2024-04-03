@@ -15,14 +15,15 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   # Alphabetical sorting
-  amdgpud          = pkgs.callPackage ./pkgs/amdgpud { };
-  amdgpu-clocks    = pkgs.callPackage ./pkgs/amdgpu-clocks { };
-  lilipod          = pkgs.callPackage ./pkgs/lilipod { };
-  memtest-vulkan   = pkgs.callPackage ./pkgs/memtest-vulkan { };
-  ntfs2btrfs       = pkgs.callPackage ./pkgs/ntfs2btrfs { };
-  plank-themes     = pkgs.callPackage ./pkgs/plank-themes { };
-  qemu-3dfx        = pkgs.callPackage ./pkgs/qemu-3dfx { };
-  rustdesk-bin     = pkgs.callPackage ./pkgs/rustdesk/appimage.nix { };
-  simulide         = pkgs.callPackage ./pkgs/simulide { };
-  unison-gitignore = pkgs.callPackage ./pkgs/unison-gitignore { };
+  amdgpud           = pkgs.callPackage ./pkgs/amdgpud { };
+  amdgpu-clocks     = pkgs.callPackage ./pkgs/amdgpu-clocks { };
+  inotify-consumers = pkgs.callPackage ./pkgs/inotify-consumers {};
+  lilipod           = pkgs.callPackage ./pkgs/lilipod { };
+  memtest-vulkan    = pkgs.callPackage ./pkgs/memtest-vulkan { };
+  ntfs2btrfs        = pkgs.callPackage ./pkgs/ntfs2btrfs { };
+  plank-themes      = pkgs.callPackage ./pkgs/plank-themes { };
+  qemu-3dfx         = pkgs.callPackage ./pkgs/qemu-3dfx { };
+  rustdesk-bin      = pkgs.callPackage ./pkgs/rustdesk/appimage.nix { };
+  simulide          = pkgs.callPackage ./pkgs/simulide { };
+  unison-gitignore  = pkgs.callPackage ./pkgs/unison-gitignore { };
 }
