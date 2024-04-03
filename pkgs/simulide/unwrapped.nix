@@ -75,7 +75,6 @@ in stdenv.mkDerivation {
     description = "Electronic Circuit Simulator";
     homepage    = "https://code.launchpad.net/simulide";
     license     = licenses.gpl3;
-    maintainers = [ maintainers.nikp123 ];
   };
 }
 
