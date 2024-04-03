@@ -28,15 +28,7 @@ Put this in your ``flake.nix``:
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  ...  nix.settings = {
-    extra-substituters = [
-      "https://nikpkgs.cachix.org"
-    ];
-
-    extra-trusted-public-keys = [
-      "nikpkgs.cachix.org-1:d7+McnBrT0bzs/WEcd9DkjnQ3ov8mNQAzveaCCPGcJc="
-    ];
-  };
+  ...
 ```
 
 And this in your ``configuration.nix``:
