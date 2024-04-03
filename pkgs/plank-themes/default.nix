@@ -27,7 +27,6 @@ stdenv.mkDerivation {
     description = "A collection of over 100 plank themes";
     homepage    = "https://github.com/dancooper71/Plank-Themes";
     license     = licenses.gpl3Only;
-    maintainers = [ maintainers.nikp123 ];
   };
 }
 
