@@ -17,10 +17,12 @@ buildGoModule rec {
     sha256 = "sha256-tjQslHOLuX2QQ9OgPT5Hpllc+mgMBIKUBj/klIlzJys=";
   };
 
-  vendorHash = {
-    "23.11pre-git" = "sha256-xgvZnRTyCF+JhTxpreO6iMkJ0kPQ9KaDZ0kUr1AOC+8=";
-    "24.05pre-git" = "sha256-JheeyKs4usRiBGnJN4qY/2hSW5JuWK7CFJclsbCDlfk=";
-  }.${lib.version}; # DISGOSTAN
+  vendorHash = let
+    version = builtins.substring 0 5 lib.version;
+  in {
+    "23.11" = "sha256-xgvZnRTyCF+JhTxpreO6iMkJ0kPQ9KaDZ0kUr1AOC+8=";
+    "24.05" = "sha256-JheeyKs4usRiBGnJN4qY/2hSW5JuWK7CFJclsbCDlfk=";
+  }.${version}; # DISGOSTAN
 
   nativeBuildInputs = [ pkg-config git ];
   buildInputs = [ gtk3 libayatana-appindicator ];
