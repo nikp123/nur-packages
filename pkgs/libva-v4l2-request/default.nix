@@ -53,7 +53,7 @@ stdenv.mkDerivation rec {
     '';
     homepage = "https://github.com/fenrig/libva-v4l2-request/tree/${version}";
     changelog = "https://github.com/fenrig/libva-v4l2-request/commits/${version}";
-    license = with licenses; [ lgpl mit ];
+    license = with licenses; [ lgpl21 mit ];
     platforms = platforms.linux;
     maintainers = with maintainers; [ nikp123 ];
   };
