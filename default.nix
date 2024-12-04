@@ -24,11 +24,9 @@
   memtest-vulkan         = pkgs.callPackage ./pkgs/memtest-vulkan { };
   netsed-quiet           = pkgs.callPackage ./pkgs/netsed { };
   ntfs2btrfs             = pkgs.callPackage ./pkgs/ntfs2btrfs { };
-  obsidian-bin           = pkgs.callPackage ./pkgs/obsidian/appimage.nix { };
   overlayfs-tools        = pkgs.callPackage ./pkgs/overlayfs-tools { };
   plank-themes           = pkgs.callPackage ./pkgs/plank-themes { };
   qemu-3dfx              = pkgs.callPackage ./pkgs/qemu-3dfx { };
-  rustdesk-bin           = pkgs.callPackage ./pkgs/rustdesk/appimage.nix { };
   simulide               = pkgs.callPackage ./pkgs/simulide { };
   simulide-unwrapped     = pkgs.libsForQt5.callPackage ./pkgs/simulide/unwrapped.nix { };
   systemd-lock-handler   = pkgs.callPackage ./pkgs/systemd-lock-handler { };
