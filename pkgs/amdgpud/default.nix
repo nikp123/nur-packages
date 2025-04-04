@@ -1,4 +1,10 @@
-{ lib, fetchFromGitHub, rustPlatform, pkgs }: let
+{ 
+  pkgs,
+  lib, 
+  fetchFromGitHub,
+  rustPlatform,
+  isNixOS ? false
+}: let
   buildInputs = with pkgs; [
     wayland
     wayland-scanner
@@ -36,8 +42,12 @@ in rustPlatform.buildRustPackage rec {
   in {
     "24.05" = "sha256-0OI/AQe0mtpxcp6Ok6iepCIdJpdSgFKz8nO3uFEVRDY=";
     "24.11" = "sha256-0OI/AQe0mtpxcp6Ok6iepCIdJpdSgFKz8nO3uFEVRDY=";
-    "25.05" = "sha256-XgdbFMcyoYRaimN4rEmqU8qkZg78vsCmPMlKeO5zPcg=";
-  }.${version}; # DISGOSTAN
+    "25.05" = {
+      # yes dumb shite like this makes a difference
+      "true" = "sha256-St3hKOiIEje6P3/rwnCIcHQxil4Veq4mxv7Rrxd5C7o=";
+      "false"  = "sha256-XgdbFMcyoYRaimN4rEmqU8qkZg78vsCmPMlKeO5zPcg=";
+    }.isNixOS;
+  }.${version};
 
   meta = with lib; {
     description = "AMD GPU management tools";
