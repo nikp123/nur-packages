@@ -26,8 +26,6 @@
   pw_wp_bluetooth_rpi_speaker =
     pkgs.callPackage ./pkgs/pw_wp_bluetooth_rpi_speaker { };
   qemu-3dfx              = pkgs.callPackage ./pkgs/qemu-3dfx { };
-  simulide               = pkgs.callPackage ./pkgs/simulide { };
-  simulide-unwrapped     = pkgs.libsForQt5.callPackage ./pkgs/simulide/unwrapped.nix { };
   systemd-lock-handler   = pkgs.callPackage ./pkgs/systemd-lock-handler { };
   tailscale-systray      = pkgs.callPackage ./pkgs/tailscale-systray { };
   unison-gitignore       = pkgs.callPackage ./pkgs/unison-gitignore { };
